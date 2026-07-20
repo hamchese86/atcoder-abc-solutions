@@ -1,0 +1,25 @@
+import * as fs from "fs";
+
+const inputText: string = fs.readFileSync(0, "utf8").trim();
+const texts: string[] = inputText.split(/\n/);
+
+// NとMの取得
+const [ballCnt, colorCnt] = texts[0].split(/\s/).map(Number);
+;
+
+// 結果の配列だけ先に作成（初期値-1）
+const answer = Array(colorCnt).fill(-1);
+
+// ボールを1個ずつ確認する
+for (let i = 1; i <= ballCnt; i++) {
+  const [color, size] = texts[i].split(" ").map(Number);
+
+  // 今までの最大値と、新しいボールの大きさを比べる
+  // 1番目→先頭
+  if (answer[color - 1] < size) {
+    answer[color - 1] = size;
+  }
+}
+
+// 箱の中身を出力する
+console.log(answer.join(" "));
