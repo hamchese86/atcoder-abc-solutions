@@ -10,6 +10,7 @@ abc467_b_KeepTheChange
 - 問題：B - Keep the Change
 - 問題URL：https://atcoder.jp/contests/abc467/tasks/abc467_b
 - 提出結果：AC
+- 提出URL：https://atcoder.jp/contests/abc467/submissions/77705910
 
 ## 使用言語
 TypeScript 5.9 (tsc 5.9.2 (Node.js 22.19.0))
@@ -23,6 +24,7 @@ abc466_b_RepresentativeBalls
 - 問題：B - Keep the Change
 - 問題URL：https://atcoder.jp/contests/abc466/tasks/abc466_b
 - 提出結果：AC
+- 提出URL：https://atcoder.jp/contests/abc466/submissions/77706451
 
 ## 使用言語
 TypeScript 5.9 (tsc 5.9.2 (Node.js 22.19.0))
