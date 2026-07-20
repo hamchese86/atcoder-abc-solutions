@@ -1,0 +1,22 @@
+import * as fs from "fs";
+
+// 入力データの分解
+const inputText: string = fs.readFileSync(0, "utf8").trim();
+const texts: string[] = inputText.split(/\n/);
+
+// 店舗数を取得
+const shopCount: number = Number(texts[0]);
+
+let value = 0;
+
+// 店舗毎の結果
+for(let i = 1; i <= shopCount; i++) {
+  const [purchase, pay, changeSts] = texts[i].split(/\s/);
+  
+  if (changeSts === "keep") {
+    value += Number(pay) - Number(purchase);
+  }
+}
+
+// 最終結果出力
+console.log(value);
